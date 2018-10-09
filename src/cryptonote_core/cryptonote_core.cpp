@@ -411,7 +411,7 @@ namespace cryptonote
     return m_blockchain_storage.get_alternative_blocks_count();
   }
   //-----------------------------------------------------------------------------------------------
-  bool core::init(const boost::program_options::variables_map& vm, const char *config_subdir, const cryptonote::test_options *test_options)
+  bool core::init(const boost::program_options::variables_map& vm, const char *config_subdir, const cryptonote::test_options *test_options, const GetCheckpointsCallback& get_checkpoints/* = nullptr */)
   {
     start_time = std::time(nullptr);
 
@@ -610,7 +610,7 @@ namespace cryptonote
       0
     };
     const difficulty_type fixed_difficulty = command_line::get_arg(vm, arg_fixed_difficulty);
-    r = m_blockchain_storage.init(db.release(), m_nettype, m_offline, regtest ? &regtest_test_options : test_options, fixed_difficulty);
+    r = m_blockchain_storage.init(db.release(), m_nettype, m_offline, regtest ? &regtest_test_options : test_options, fixed_difficulty, get_checkpoints);
 
     r = m_mempool.init(max_txpool_weight);
     CHECK_AND_ASSERT_MES(r, false, "Failed to initialize memory pool");
