@@ -23,7 +23,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 - Bitcointalk: https://bitcointalk.org/index.php?topic=641696.0
 - Reddit: https://www.reddit.com/r/Aeon
 - GitHub: [https://github.com/aeonix/aeon](https://github.com/aeonix/aeon)
-- IRC: [#aeon on Freenode](https://webchat.freenode.net/?randomnick=1&channels=%23aeon&prompt=1&uio=d4)
+- IRC: [#aeon on Libera](https://web.libera.chat/#aeon)
 - Discord: https://discord.gg/TM8mEsx
 
 ## Vulnerability response
