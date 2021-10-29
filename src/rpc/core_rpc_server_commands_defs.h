@@ -1192,7 +1192,7 @@ namespace cryptonote
       bool fill_pow_hash;
 
       BEGIN_KV_SERIALIZE_MAP()
-        KV_SERIALIZE_OPT(fill_pow_hash, false);
+        KV_SERIALIZE_OPT(fill_pow_hash, true);
       END_KV_SERIALIZE_MAP()
     };
 
@@ -1220,7 +1220,7 @@ namespace cryptonote
 
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(hash)
-        KV_SERIALIZE_OPT(fill_pow_hash, false);
+        KV_SERIALIZE_OPT(fill_pow_hash, true);
       END_KV_SERIALIZE_MAP()
     };
 
@@ -1248,7 +1248,7 @@ namespace cryptonote
 
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(height)
-        KV_SERIALIZE_OPT(fill_pow_hash, false);
+        KV_SERIALIZE_OPT(fill_pow_hash, true);
       END_KV_SERIALIZE_MAP()
     };
 
@@ -1278,7 +1278,7 @@ namespace cryptonote
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(hash)
         KV_SERIALIZE(height)
-        KV_SERIALIZE_OPT(fill_pow_hash, false);
+        KV_SERIALIZE_OPT(fill_pow_hash, true);
       END_KV_SERIALIZE_MAP()
     };
 
@@ -1662,7 +1662,7 @@ namespace cryptonote
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(start_height)
         KV_SERIALIZE(end_height)
-        KV_SERIALIZE_OPT(fill_pow_hash, false);
+        KV_SERIALIZE_OPT(fill_pow_hash, true);
       END_KV_SERIALIZE_MAP()
     };
 
