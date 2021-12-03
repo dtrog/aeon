@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
+// Copyright (c) 2014-2021, AEON, The Monero Project
 //
 // All rights reserved.
 //
@@ -410,6 +410,7 @@ namespace nodetool
       full_addrs.insert("74.91.23.186:11180");
       full_addrs.insert("192.187.114.114:11180");
       full_addrs.insert("188.166.75.158:11180");
+      full_addrs.insert("209.126.84.37:11180");
     }
     return full_addrs;
   }
