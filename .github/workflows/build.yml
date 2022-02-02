@@ -9,12 +9,30 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: recursive
+        fetch-depth: 0
     - name: install dependencies
       run: HOMEBREW_NO_AUTO_UPDATE=1  brew install boost openssl zmq libpgm miniupnpc ldns expat libunwind-headers protobuf
     - name: fetch zmq.hpp
       run: brew tap osrf/simulation && brew install cppzmq
     - name: build
-      run: make -j3
+      run: USE_SINGLE_BUILDDIR=1 make release-static -j3
+    - name: archive
+      run: |
+        export ARTIFACT_NAME="aeon-mac-x64-$(git describe --tags)"
+        mkdir $ARTIFACT_NAME
+        cp bin/* $ARTIFACT_NAME
+        tar cvzf $ARTIFACT_NAME.tar.bz2 $ARTIFACT_NAME
+        echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
+      working-directory: build/release
+    - name: SHA256 checksum
+      run: openssl sha256 ${{ env.ARTIFACT_NAME }}.tar.bz2
+      working-directory: build/release
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ${{ env.ARTIFACT_NAME }}.tar.bz2
+        path: build/release/${{ env.ARTIFACT_NAME }}.tar.bz2
+    - name: upload to transfer.sh
+      run: curl --upload-file build/release/${{ env.ARTIFACT_NAME }}.tar.bz2 https://transfer.sh/${{ env.ARTIFACT_NAME }}.tar.bz2
 
   build-windows:
     runs-on: windows-latest
@@ -25,12 +43,30 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: recursive
+        fetch-depth: 0
     - uses: eine/setup-msys2@v2
       with:
         update: true
-        install: mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-protobuf-c git
+        install: mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-protobuf-c git zip curl
     - name: build
-      run: make release-static-win64 -j2
+      run: USE_SINGLE_BUILDDIR=1 make release-static-win64 -j2
+    - name: archive
+      run: |
+        export ARTIFACT_NAME="aeon-win-x64-$(git describe --tags)"
+        mkdir $ARTIFACT_NAME
+        cp bin/* $ARTIFACT_NAME
+        zip -r9 $ARTIFACT_NAME.zip $ARTIFACT_NAME
+        echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
+      working-directory: build/release
+    - name: SHA256 checksum
+      run: openssl sha256 ${{ env.ARTIFACT_NAME }}.zip
+      working-directory: build/release
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ${{ env.ARTIFACT_NAME }}.zip
+        path: build/release/${{ env.ARTIFACT_NAME }}.zip
+    - name: upload to transfer.sh
+      run: curl --upload-file build/release/${{ env.ARTIFACT_NAME }}.zip https://transfer.sh/${{ env.ARTIFACT_NAME }}.zip
 
   build-ubuntu:
     runs-on: ubuntu-latest
@@ -38,6 +74,7 @@ jobs:
     - uses: actions/checkout@v1
       with:
         submodules: recursive
+        fetch-depth: 0
     - name: remove bundled boost
       run: sudo rm -rf /usr/local/share/boost
     - name: set apt conf
@@ -50,7 +87,24 @@ jobs:
     - name: install monero dependencies
       run: sudo apt -y install build-essential cmake libboost-all-dev miniupnpc libunbound-dev graphviz doxygen libunwind8-dev pkg-config libssl-dev libzmq3-dev libsodium-dev libnorm-dev libpgm-dev
     - name: build
-      run: make -j3
+      run: USE_SINGLE_BUILDDIR=1 make release-static -j3
+    - name: archive
+      run: |
+        export ARTIFACT_NAME="aeon-linux-x64-$(git describe --tags)"
+        mkdir $ARTIFACT_NAME
+        cp bin/* $ARTIFACT_NAME
+        tar cvzf $ARTIFACT_NAME.tar.bz2 $ARTIFACT_NAME
+        echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
+      working-directory: build/release
+    - name: SHA256 checksum
+      run: openssl sha256 ${{ env.ARTIFACT_NAME }}.tar.bz2
+      working-directory: build/release
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ${{ env.ARTIFACT_NAME }}.tar.bz2
+        path: build/release/${{ env.ARTIFACT_NAME }}.tar.bz2
+    - name: upload to transfer.sh
+      run: curl --upload-file build/release/${{ env.ARTIFACT_NAME }}.tar.bz2 https://transfer.sh/${{ env.ARTIFACT_NAME }}.tar.bz2
 
   libwallet-ubuntu:
     runs-on: ubuntu-latest
