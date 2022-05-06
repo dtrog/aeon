@@ -1552,7 +1552,7 @@ skip:
       m_core.get_short_chain_history(r.block_ids);
       CHECK_AND_ASSERT_MES(!r.block_ids.empty(), false, "Short chain history is empty");
 
-      if (!start_from_current_chain)
+      if (!start_from_current_chain && false)
       {
         // we'll want to start off from where we are on that peer, which may not be added yet
         if (context.m_last_known_hash != crypto::null_hash && r.block_ids.front() != context.m_last_known_hash)
