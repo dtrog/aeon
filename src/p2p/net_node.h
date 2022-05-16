@@ -292,6 +292,7 @@ namespace nodetool
     bool m_hide_my_port;
     bool m_no_igd;
     bool m_offline;
+    uint64_t m_ibd_test;
     std::atomic<bool> m_save_graph;
     std::atomic<bool> is_closing;
     std::unique_ptr<boost::thread> mPeersLoggerThread;
@@ -355,6 +356,8 @@ namespace nodetool
     extern const command_line::arg_descriptor<int64_t> arg_limit_rate_up;
     extern const command_line::arg_descriptor<int64_t> arg_limit_rate_down;
     extern const command_line::arg_descriptor<int64_t> arg_limit_rate;
+
+    extern const command_line::arg_descriptor<int64_t> arg_ibd_test;
 
     extern const command_line::arg_descriptor<bool> arg_save_graph;
 }

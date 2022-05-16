@@ -83,6 +83,7 @@ namespace nodetool
     command_line::add_arg(desc, arg_limit_rate_up);
     command_line::add_arg(desc, arg_limit_rate_down);
     command_line::add_arg(desc, arg_limit_rate);
+    command_line::add_arg(desc, arg_ibd_test);
     command_line::add_arg(desc, arg_save_graph);
   }
   //-----------------------------------------------------------------------------------
@@ -266,6 +267,7 @@ namespace nodetool
     m_allow_local_ip = command_line::get_arg(vm, arg_p2p_allow_local_ip);
     m_no_igd = command_line::get_arg(vm, arg_no_igd);
     m_offline = command_line::get_arg(vm, cryptonote::arg_offline);
+    m_ibd_test = (uint64_t)command_line::get_arg(vm, arg_ibd_test);
 
     if (command_line::has_arg(vm, arg_p2p_add_peer))
     {
@@ -1324,6 +1326,16 @@ namespace nodetool
     m_gray_peerlist_housekeeping_interval.do_call(boost::bind(&node_server<t_payload_net_handler>::gray_peerlist_housekeeping, this));
     m_peerlist_store_interval.do_call(boost::bind(&node_server<t_payload_net_handler>::store_config, this));
     m_incoming_connections_interval.do_call(boost::bind(&node_server<t_payload_net_handler>::check_incoming_connections, this));
+
+    if (m_ibd_test)
+    {
+      if (m_payload_handler.get_core().get_current_blockchain_height() >= m_ibd_test || m_payload_handler.is_synchronized())
+      {
+        MGINFO_GREEN("IBD test done, stopping...");
+        send_stop_signal();
+      }
+    }
+
     return true;
   }
   //-----------------------------------------------------------------------------------

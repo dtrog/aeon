@@ -161,3 +161,75 @@ jobs:
       env:
         CTEST_OUTPUT_ON_FAILURE: ON
       run: make release-test -j3
+
+
+
+  ibdtest-macos:
+    needs: build-macos
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 0
+    - name: determine artifact name
+      run: |
+        export ARTIFACT_NAME="aeon-mac-x64-$(git describe --tags)"
+        echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
+    - uses: actions/download-artifact@v3
+      with:
+        name: ${{ env.ARTIFACT_NAME }}.tar.bz2
+    - name: extract & install
+      run: |
+        tar xvf $ARTIFACT_NAME.tar.bz2
+        sudo cp $ARTIFACT_NAME/* /usr/local/bin
+    - name: run IBD test
+      run: aeond --non-interactive --ibd-test -1
+
+  ibdtest-windows:
+    needs: build-windows
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 0
+    - uses: eine/setup-msys2@v2
+      with:
+        update: true
+        install: mingw-w64-x86_64-toolchain git unzip curl
+    - name: determine artifact name
+      run: |
+        export ARTIFACT_NAME="aeon-win-x64-$(git describe --tags)"
+        echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
+    - uses: actions/download-artifact@v3
+      with:
+        name: ${{ env.ARTIFACT_NAME }}.zip
+    - name: extract & install
+      run: |
+        unzip $ARTIFACT_NAME.zip
+        cp $ARTIFACT_NAME/* /usr/bin
+    - name: run IBD test
+      run: aeond --non-interactive --ibd-test -1
+
+  ibdtest-ubuntu:
+    needs: build-ubuntu
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 0
+    - name: determine artifact name
+      run: |
+        export ARTIFACT_NAME="aeon-linux-x64-$(git describe --tags)"
+        echo "ARTIFACT_NAME=$ARTIFACT_NAME" >> $GITHUB_ENV
+    - uses: actions/download-artifact@v3
+      with:
+        name: ${{ env.ARTIFACT_NAME }}.tar.bz2
+    - name: extract & install
+      run: |
+        tar xvf $ARTIFACT_NAME.tar.bz2
+        sudo cp $ARTIFACT_NAME/* /usr/local/bin
+    - name: run IBD test
+      run: aeond --non-interactive --ibd-test -1
