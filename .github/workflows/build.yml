@@ -54,6 +54,14 @@ jobs:
         install: mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-protobuf-c git zip curl
     - name: build
       run: USE_SINGLE_BUILDDIR=1 make release-static-win64 -j2
+    - name: copy dependent DLLs
+      run: |
+        cp $MSYSTEM_PREFIX/bin/libwinpthread-1.dll .
+        cp $MSYSTEM_PREFIX/bin/libstdc++-6.dll .
+        cp $MSYSTEM_PREFIX/bin/libssp-0.dll .
+        cp $MSYSTEM_PREFIX/bin/libiconv-2.dll .
+        cp $MSYSTEM_PREFIX/bin/libgcc_s_seh-1.dll .
+      working-directory: build/release/bin
     - name: archive
       run: |
         export ARTIFACT_NAME="aeon-win-x64-$(git describe --tags)"
