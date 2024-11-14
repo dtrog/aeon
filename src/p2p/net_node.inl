@@ -408,6 +408,9 @@ namespace nodetool
     }
     else
     {
+      full_addrs.insert("192.168.1.38:45416"); //rpi5
+      full_addrs.insert("192.168.1.49:45416"); //lenovo
+      full_addrs.insert("192.168.1.34:45416"); //nuc
       // full_addrs.insert("104.168.163.221:11180");
       // full_addrs.insert("74.91.23.186:11180");
       // full_addrs.insert("192.187.114.114:11180");
