@@ -2878,8 +2878,8 @@ Attention&#xa0;: Certaines clés d&apos;entrées étant dépensées sont issues 
    Set the fee to default/unimportant/normal/elevated/priority.
  confirm-missing-payment-id &lt;1|0&gt;
  ask-password &lt;0|1|2   (or never|action|decrypt)&gt;
- unit &lt;aeon|milliaeon|microaeon|nanoaeon|picoaeon&gt;
-   Set the default aeon (sub-)unit.
+ unit &lt;europacash|millieuropacash|microeuropacash|nanoeuropacash|picoeuropacash&gt;
+   Set the default europacash (sub-)unit.
  min-outputs-count [n]
    Try to keep at least that many outputs of value at least min-outputs-value.
  min-outputs-value [n]
@@ -2922,8 +2922,8 @@ subaddress-lookahead &lt;major&gt;:&lt;minor&gt;
    Utiliser les frais pour la priorité par défaut/peu importante/normale/élevée/prioritaire.
  confirm-missing-payment-id &lt;1|0&gt;
  ask-password &lt;0|1|2 (ou never|action|decrypt)&gt;
- unit &lt;aeon|milliaeon|microaeon|nanoaeon|picoaeon&gt;
-   Définir la (sous-)unité aeon par défaut.
+ unit &lt;europacash|millieuropacash|microeuropacash|nanoeuropacash|picoeuropacash&gt;
+   Définir la (sous-)unité europacash par défaut.
  min-outputs-count [n]
    Essayer de garder au moins ce nombre de sorties d&apos;une valeur d&apos;au moins min-outputs-value.
  min-outputs-value [n]
@@ -3064,8 +3064,8 @@ subaddress-lookahead &lt;major&gt;:&lt;minor&gt;
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2650"/>
-        <source>aeon, milliaeon, microaeon, nanoaeon, picoaeon</source>
-        <translation>aeon, milliaeon, microaeon, nanoaeon, picoaeon</translation>
+        <source>europacash, millieuropacash, microeuropacash, nanoeuropacash, picoeuropacash</source>
+        <translation>europacash, millieuropacash, microeuropacash, nanoeuropacash, picoeuropacash</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2661"/>

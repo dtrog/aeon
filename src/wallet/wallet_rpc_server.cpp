@@ -65,7 +65,7 @@ namespace
   const command_line::arg_descriptor<std::string> arg_wallet_dir = {"wallet-dir", "Directory for newly created wallets"};
   const command_line::arg_descriptor<bool> arg_prompt_for_password = {"prompt-for-password", "Prompts for password when not provided", false};
 
-  constexpr const char default_rpc_username[] = "aeon";
+  constexpr const char default_rpc_username[] = "europacash";
 
   boost::optional<tools::password_container> password_prompter(const char *prompt, bool verify)
   {
@@ -206,7 +206,7 @@ namespace tools
           string_encoding::base64_encode(rand_128bit.data(), rand_128bit.size())
         );
 
-        std::string temp = "aeon-wallet-rpc." + bind_port + ".login";
+        std::string temp = "europacash-wallet-rpc." + bind_port + ".login";
         rpc_login_file = tools::private_file::create(temp);
         if (!rpc_login_file.handle())
         {
@@ -640,7 +640,7 @@ namespace tools
           }
           if (addresses.empty())
           {
-            er.message = std::string("No Aeon address found at ") + url;
+            er.message = std::string("No Europacash address found at ") + url;
             return {};
           }
           return addresses[0];
@@ -1873,7 +1873,7 @@ namespace tools
         }
         if (addresses.empty())
         {
-          er.message = std::string("No Aeon address found at ") + url;
+          er.message = std::string("No Europacash address found at ") + url;
           return {};
         }
         return addresses[0];
@@ -2664,7 +2664,7 @@ namespace tools
         }
         if (addresses.empty())
         {
-          er.message = std::string("No Aeon address found at ") + url;
+          er.message = std::string("No Europacash address found at ") + url;
           return {};
         }
         return addresses[0];
@@ -3947,7 +3947,7 @@ namespace tools
             }
             if (addresses.empty())
             {
-              er.message = std::string("No Aeon address found at ") + url;
+              er.message = std::string("No Europacash address found at ") + url;
               return {};
             }
             address = addresses[0];
@@ -4248,12 +4248,12 @@ int main(int argc, char** argv) {
   bool should_terminate = false;
   std::tie(vm, should_terminate) = wallet_args::main(
     argc, argv,
-    "aeon-wallet-rpc [--wallet-file=<file>|--generate-from-json=<file>|--wallet-dir=<directory>] [--rpc-bind-port=<port>]",
-    tools::wallet_rpc_server::tr("This is the RPC Aeon wallet. It needs to connect to an Aeon\ndaemon to work correctly."),
+    "europacash-wallet-rpc [--wallet-file=<file>|--generate-from-json=<file>|--wallet-dir=<directory>] [--rpc-bind-port=<port>]",
+    tools::wallet_rpc_server::tr("This is the RPC Europacash wallet. It needs to connect to an Europacash\ndaemon to work correctly."),
     desc_params,
     po::positional_options_description(),
     [](const std::string &s, bool emphasis){ epee::set_console_color(emphasis ? epee::console_color_white : epee::console_color_default, true); std::cout << s << std::endl; if (emphasis) epee::reset_console_color(); },
-    "aeon-wallet-rpc.log",
+    "europacash-wallet-rpc.log",
     true
   );
   if (!vm)

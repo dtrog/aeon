@@ -886,15 +886,15 @@ namespace cryptonote
     switch (std::atomic_load(&default_decimal_point))
     {
       case 12:
-        return "aeon";
+        return "europacash";
       case 9:
-        return "milliaeon";
+        return "millieuropacash";
       case 6:
-        return "microaeon";
+        return "microeuropacash";
       case 3:
-        return "nanoaeon";
+        return "nanoeuropacash";
       case 0:
-        return "picoaeon";
+        return "picoeuropacash";
       default:
         ASSERT_MES_AND_THROW("Invalid decimal point specification: " << default_decimal_point);
     }

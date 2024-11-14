@@ -408,8 +408,8 @@ namespace dns_utils
 // TODO: parse the string in a less stupid way, probably with regex
 std::string address_from_txt_record(const std::string& s)
 {
-  // make sure the txt record has "oa1:aeon" and find it
-  auto pos = s.find("oa1:aeon");
+  // make sure the txt record has "oa1:europacash" and find it
+  auto pos = s.find("oa1:europacash");
   if (pos == std::string::npos)
     return {};
   // search from there to find "recipient_address="

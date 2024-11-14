@@ -1,40 +1,40 @@
-# Aeon
+# EuropaCash
 
-[![Github All Releases](https://img.shields.io/github/downloads/aeonix/aeon/total.svg)](../../releases)
-[![GitHub release](https://img.shields.io/github/release/aeonix/aeon/all.svg)](../../releases/latest)
-[![GitHub Release Date](https://img.shields.io/github/release-date-pre/aeonix/aeon.svg)](../../releases/latest)
-[![GitHub top language](https://img.shields.io/github/languages/top/aeonix/aeon.svg)](../../)
-[![GitHub language count](https://img.shields.io/github/languages/count/aeonix/aeon.svg)](../../)
-[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/aeonix/aeon.svg)](../../)
+[![Github All Releases](https://img.shields.io/github/downloads/europacashix/europacash/total.svg)](../../releases)
+[![GitHub release](https://img.shields.io/github/release/europacashix/europacash/all.svg)](../../releases/latest)
+[![GitHub Release Date](https://img.shields.io/github/release-date-pre/europacashix/europacash.svg)](../../releases/latest)
+[![GitHub top language](https://img.shields.io/github/languages/top/europacashix/europacash.svg)](../../)
+[![GitHub language count](https://img.shields.io/github/languages/count/europacashix/europacash.svg)](../../)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/europacashix/europacash.svg)](../../)
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/aeonix/aeon.svg)](../../)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/aeonix/aeon/latest.svg)](../../)
-[![GitHub stars](https://img.shields.io/github/stars/aeonix/aeon.svg)](../../stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/aeonix/aeon.svg)](../../network)
-[![GitHub issues](https://img.shields.io/github/issues/aeonix/aeon.svg)](../../issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/aeonix/aeon.svg)](../../issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/europacashix/europacash.svg)](../../)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/europacashix/europacash/latest.svg)](../../)
+[![GitHub stars](https://img.shields.io/github/stars/europacashix/europacash.svg)](../../stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/europacashix/europacash.svg)](../../network)
+[![GitHub issues](https://img.shields.io/github/issues/europacashix/europacash.svg)](../../issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/europacashix/europacash.svg)](../../issues)
 
 Copyright (c) 2014-2022, AEON, The Monero Project.   
 Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Development resources
 
-- Web: [aeon.cash](https://www.aeon.cash)
+- Web: [europacash.cash](https://www.europacash.cash)
 - Bitcointalk: https://bitcointalk.org/index.php?topic=641696.0
-- Reddit: https://www.reddit.com/r/Aeon
-- GitHub: [https://github.com/aeonix/aeon](https://github.com/aeonix/aeon)
-- IRC: [#aeon on Libera](https://web.libera.chat/#aeon)
+- Reddit: https://www.reddit.com/r/EuropaCash
+- GitHub: [https://github.com/europacashix/europacash](https://github.com/europacashix/europacash)
+- IRC: [#europacash on Libera](https://web.libera.chat/#europacash)
 - Discord: https://discord.gg/TM8mEsx
 
 ## Vulnerability response
 
-- Vulnerability response should be redirected to Monero because much of Aeon's technical ground is shared
+- Vulnerability response should be redirected to Monero because much of EuropaCash's technical ground is shared
 - Our [Vulnerability Response Process](https://github.com/monero-project/meta/blob/master/VULNERABILITY_RESPONSE_PROCESS.md) encourages responsible disclosure
 - We are also available via [HackerOne](https://hackerone.com/monero)
 
 ## Announcements
 
-- You can subscribe to an [announcement list](https://docs.google.com/forms/d/e/1FAIpQLSci2UitA67N0W_xgSPLlGj6acGnTOtTdDR_ODZwXTHXZsWnCQ/viewform) to get critical announcements from the Aeon core team. The announcement list can be very helpful for knowing when software updates are needed.
+- You can subscribe to an [announcement list](https://docs.google.com/forms/d/e/1FAIpQLSci2UitA67N0W_xgSPLlGj6acGnTOtTdDR_ODZwXTHXZsWnCQ/viewform) to get critical announcements from the EuropaCash core team. The announcement list can be very helpful for knowing when software updates are needed.
 
 ## Coverage
 
@@ -44,27 +44,27 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 
 ## Introduction
 
-Aeon is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+EuropaCash is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
-**Privacy:** Aeon uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
+**Privacy:** EuropaCash uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
 **Security:** Using the power of a distributed peer-to-peer consensus network, every transaction on the network is cryptographically secured. Individual wallets have a 25 word mnemonic seed that is only displayed once, and can be written down to backup the wallet. Wallet files are encrypted with a passphrase to ensure they are useless if stolen.
 
-**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, Aeon is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
+**Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, EuropaCash is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
 ## About this project
 
-This is the core implementation of Aeon. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of Aeon that uses the protocol and network in a compatible manner.
+This is the core implementation of EuropaCash. It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of EuropaCash that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-**Anyone is welcome to contribute to Aeon's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
+**Anyone is welcome to contribute to EuropaCash's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
 ## Supporting the project
 
-Aeon is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Aeon and Bitcoin donations can be made to **donate.aeon.cash** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send AEON to the Aeon donation address via the `donate` command (type `help` in the command-line wallet for details).
+EuropaCash is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both EuropaCash and Bitcoin donations can be made to **donate.europacash.cash** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send AEON to the EuropaCash donation address via the `donate` command (type `help` in the command-line wallet for details).
 
-The Aeon donation address is: `WmsSWgtT1JPg5e3cK41hKXSHVpKW7e47bjgiKmWZkYrhSS5LhRemNyqayaSBtAQ6517eo5PtH9wxHVmM78JDZSUu2W8PqRiNs` (viewkey: `71bf19a7348ede17fa487167710dac401ef1556851bfd36b76040facf051630b`)
+The EuropaCash donation address is: `WmsSWgtT1JPg5e3cK41hKXSHVpKW7e47bjgiKmWZkYrhSS5LhRemNyqayaSBtAQ6517eo5PtH9wxHVmM78JDZSUu2W8PqRiNs` (viewkey: `71bf19a7348ede17fa487167710dac401ef1556851bfd36b76040facf051630b`)
 
 The Bitcoin donation address is: `12Cyjf3qV6qLyXdzpLSLPdRFPUVidvnzFM`
 
@@ -90,18 +90,18 @@ If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidel
 
 ## Software upgrades
 
-Aeon uses a software upgrade (hard fork) mechanism to implement new features. This means that users of Aeon (end users and service providers) should run current versions and upgrade their software as needed. **In contrast to Monero, there is no fixed schedule for hard forks, and the schedule for the next fork will be determined organically through community discussion.** The required software for these upgrades will be available prior to the scheduled date. Please check the repository prior to this date for the proper Aeon software version. Below is the historical schedule and the projected schedule for the next upgrade.
+EuropaCash uses a software upgrade (hard fork) mechanism to implement new features. This means that users of EuropaCash (end users and service providers) should run current versions and upgrade their software as needed. **In contrast to Monero, there is no fixed schedule for hard forks, and the schedule for the next fork will be determined organically through community discussion.** The required software for these upgrades will be available prior to the scheduled date. Please check the repository prior to this date for the proper EuropaCash software version. Below is the historical schedule and the projected schedule for the next upgrade.
 Dates are provided in the format YYYY-MM-DD. 
 
 
-| Software upgrade block height | Date       | Fork version | Minimum Aeon version | Recommended Aeon version | Details                                                                            |  
+| Software upgrade block height | Date       | Fork version | Minimum EuropaCash version | Recommended EuropaCash version | Details                                                                            |  
 | ------------------------------ | -----------| ----------------- | ---------------------- | -------------------------- | ---------------------------------------------------------------------------------- |
 | 592000                        | 2015-08-04 | v1 (exceptional, version not bumped)      | v0.9.0.0                 | v0.9.14.0                     | blocktime = 240 seconds, CryptoNight-Lite, lower mining priority for ringsize < 3       |
-| 963500                        | 2018-06-03 | v7                | v0.12.0.0                 | v0.12.9.0-aeon                    | Rebase to Monero's latest codebase with RingCT disabled, CryptoNight-Lite variant 1, limited use of ringsize 1, ban ringsize 2   |
-| 1146200                       | 2019-10-25 | v8                | v0.13.0.0-aeon            | v0.13.1.0-aeon                    | Switch to K12 PoW, reduced tx size with Borromean sigs, fixed ringsize 3, long-term block size, enforced 10 block age   |
-| 1280000                       | 2020-11-11 | v9                | v0.14.1.0-aeon            | v0.14.2.2-aeon                    | Difficulty algorithm variant 9 (cut/sort removed, lag reduced to 8), change to the block median used to calculate penalty, deterministic unlock times   |
+| 963500                        | 2018-06-03 | v7                | v0.12.0.0                 | v0.12.9.0-europacash                    | Rebase to Monero's latest codebase with RingCT disabled, CryptoNight-Lite variant 1, limited use of ringsize 1, ban ringsize 2   |
+| 1146200                       | 2019-10-25 | v8                | v0.13.0.0-europacash            | v0.13.1.0-europacash                    | Switch to K12 PoW, reduced tx size with Borromean sigs, fixed ringsize 3, long-term block size, enforced 10 block age   |
+| 1280000                       | 2020-11-11 | v9                | v0.14.1.0-europacash            | v0.14.2.2-europacash                    | Difficulty algorithm variant 9 (cut/sort removed, lag reduced to 8), change to the block median used to calculate penalty, deterministic unlock times   |
 
-## Compiling Aeon from source
+## Compiling EuropaCash from source
 
 ### Dependencies
 
@@ -151,15 +151,15 @@ Install all dependencies at once on Debian/Ubuntu 18.04:
 
 Clone recursively to pull-in needed submodule(s):
 
-`$ git clone --recursive https://github.com/aeonix/aeon`
+`$ git clone --recursive https://github.com/europacashix/europacash`
 
 If you already have a repo cloned, initialize and update:
 
-`$ cd aeon && git submodule init && git submodule update`
+`$ cd europacash && git submodule init && git submodule update`
 
 ### Build instructions
 
-Aeon uses the CMake build system and a top-level [Makefile](Makefile) that
+EuropaCash uses the CMake build system and a top-level [Makefile](Makefile) that
 invokes cmake commands as needed.
 
 #### On Linux and OS X
@@ -167,8 +167,8 @@ invokes cmake commands as needed.
 * Install the dependencies
 * Change to the root of the source code directory, change to the most recent release tag, and build:
 
-        cd aeon
-        git checkout v0.14.2.2-aeon
+        cd europacash
+        git checkout v0.14.2.2-europacash
         make
 
     *Optional*: If your machine has several cores and enough memory, enable
@@ -180,16 +180,16 @@ invokes cmake commands as needed.
     https://github.com/zeromq/cppzmq to `/usr/local/include` should fix that error.
     
     *Note*: The instructions above will compile the most stable release of the
-    Aeon software. If you would like to use and test the most recent software,
+    EuropaCash software. If you would like to use and test the most recent software,
     use ```git checkout master```. The master branch may contain updates that are
     both unstable and incompatible with release software, though testing is always 
     encouraged. 
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/aeon/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/europacash/build/release/bin"` to `.profile`
 
-* Run Aeon with `aeond --detach`
+* Run EuropaCash with `europacashd --detach`
 
 * **Optional**: build and run the test suite to verify the binaries:
 
@@ -217,7 +217,7 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * `apt-get update && apt-get upgrade` to install all of the latest software
 
-* Install the dependencies for Aeon from the 'Debian' column in the table above.
+* Install the dependencies for EuropaCash from the 'Debian' column in the table above.
 
 * Increase the system swap size:
 ```	
@@ -228,11 +228,11 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 ```
 * If using an external hard disk without an external power supply, ensure it gets enough power to avoid hardware issues when syncing, by adding the line "max_usb_current=1" to /boot/config.txt
 
-* Clone Aeon and checkout most recent release version:
+* Clone EuropaCash and checkout most recent release version:
 ```
-        git clone https://github.com/aeonix/aeon.git
-	cd aeon
-	git checkout tags/v0.14.2.2-aeon
+        git clone https://github.com/europacashix/europacash.git
+	cd europacash
+	git checkout tags/v0.14.2.2-europacash
 ```
 * Build:
 ```
@@ -242,15 +242,15 @@ Tested on a Raspberry Pi Zero with a clean install of minimal Raspbian Stretch (
 
 * The resulting executables can be found in `build/release/bin`
 
-* Add `PATH="$PATH:$HOME/aeon/build/release/bin"` to `.profile`
+* Add `PATH="$PATH:$HOME/europacash/build/release/bin"` to `.profile`
 
-* Run Aeon with `aeond --detach`
+* Run EuropaCash with `europacashd --detach`
 
 * You may wish to reduce the size of the swap file after the build has finished, and delete the boost directory from your home directory
 
 #### *Note for Raspbian Jessie users:*
 
-If you are using the older Raspbian Jessie image, compiling Aeon is a bit more complicated. The version of Boost available in the Debian Jessie repositories is too old to use with Aeon, and thus you must compile a newer version yourself. The following explains the extra steps, and has been tested on a Raspberry Pi 2 with a clean install of minimal Raspbian Jessie.
+If you are using the older Raspbian Jessie image, compiling EuropaCash is a bit more complicated. The version of Boost available in the Debian Jessie repositories is too old to use with EuropaCash, and thus you must compile a newer version yourself. The following explains the extra steps, and has been tested on a Raspberry Pi 2 with a clean install of minimal Raspbian Jessie.
 
 * As before, `apt-get update && apt-get upgrade` to install all of the latest software, and increase the system swap size
 
@@ -261,7 +261,7 @@ If you are using the older Raspbian Jessie image, compiling Aeon is a bit more c
 	sudo /etc/init.d/dphys-swapfile start  
 ```
 
-* Then, install the dependencies for Aeon except `libunwind` and `libboost-all-dev`
+* Then, install the dependencies for EuropaCash except `libunwind` and `libboost-all-dev`
 
 * Install the latest version of boost (this may first require invoking `apt-get remove --purge libboost*` to remove a previous version if you're not using a clean install):
 ```
@@ -278,7 +278,7 @@ If you are using the older Raspbian Jessie image, compiling Aeon is a bit more c
 ```
 * Wait ~4 hours
 
-* From here, follow the [general Raspberry Pi instructions](#on-the-raspberry-pi) from the "Clone Aeon and checkout most recent release version" step.
+* From here, follow the [general Raspberry Pi instructions](#on-the-raspberry-pi) from the "Clone EuropaCash and checkout most recent release version" step.
 
 #### On Windows:
 
@@ -321,17 +321,17 @@ application.
 
 * To git clone, run:
 
-        git clone --recursive https://github.com/aeonix/aeon.git
+        git clone --recursive https://github.com/europacashix/europacash.git
 
 **Building**
 
 * Change to the cloned directory, run:
 	
-        cd aeon
+        cd europacash
 
-* If you would like a specific [version/tag](https://github.com/aeonix/aeon/tags), do a git checkout for that version. eg. 'v0.14.2.2-aeon'. If you dont care about the version and just want binaries from master, skip this step:
+* If you would like a specific [version/tag](https://github.com/europacashix/europacash/tags), do a git checkout for that version. eg. 'v0.14.2.2-europacash'. If you dont care about the version and just want binaries from master, skip this step:
 	
-        git checkout v0.14.2.2-aeon
+        git checkout v0.14.2.2-europacash
 
 * If you are on a 64-bit system, run:
 
@@ -355,9 +355,9 @@ application.
 
 ### On FreeBSD:
 
-The project can be built from scratch by following instructions for Linux above. If you are running Aeon in a jail you need to add the flag: `allow.sysvipc=1` to your jail configuration, otherwise lmdb will throw the error message: `Failed to open lmdb environment: Function not implemented`.
+The project can be built from scratch by following instructions for Linux above. If you are running EuropaCash in a jail you need to add the flag: `allow.sysvipc=1` to your jail configuration, otherwise lmdb will throw the error message: `Failed to open lmdb environment: Function not implemented`.
 
-We expect to add Aeon into the ports tree in the near future, which will aid in managing installations using ports or packages.
+We expect to add EuropaCash into the ports tree in the near future, which will aid in managing installations using ports or packages.
 
 ### On OpenBSD:
 
@@ -372,7 +372,7 @@ The doxygen and graphviz packages are optional and require the xbase set.
 The Boost package has a bug that will prevent librpc.a from building correctly. In order to fix this, you will have to Build boost yourself from scratch. Follow the directions here (under "Building Boost"):
 https://github.com/bitcoin/bitcoin/blob/master/doc/build-openbsd.md
 
-You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by Aeon.
+You will have to add the serialization, date_time, and regex modules to Boost when building as they are needed by EuropaCash.
 
 To build: `env CC=egcc CXX=eg++ CPP=ecpp DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/path/to/the/boost/you/built make release-static-64`
 
@@ -447,7 +447,7 @@ cmake ..
 doas make install
 ```
 
-Build Aeon: `env DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/usr/local make release-static`
+Build EuropaCash: `env DEVELOPER_LOCAL_TOOLS=1 BOOST_ROOT=/usr/local make release-static`
 
 ### On Solaris:
 
@@ -463,13 +463,13 @@ Then you can run make as usual.
 ### On Linux for Android (using docker):
 
         # Build image (for ARM 32-bit)
-        docker build -f utils/build_scripts/android32.Dockerfile -t aeon-android .
+        docker build -f utils/build_scripts/android32.Dockerfile -t europacash-android .
         # Build image (for ARM 64-bit)
-        docker build -f utils/build_scripts/android64.Dockerfile -t aeon-android .
+        docker build -f utils/build_scripts/android64.Dockerfile -t europacash-android .
         # Create container
-        docker create -it --name aeon-android aeon-android bash
+        docker create -it --name europacash-android europacash-android bash
         # Get binaries
-        docker cp aeon-android:/src/build/release/bin .
+        docker cp europacash-android:/src/build/release/bin .
 
 ### Building portable statically linked binaries
 
@@ -497,9 +497,9 @@ You can also cross-compile static binaries on Linux for Windows and macOS with t
 
 The required packages are the names for each toolchain on apt. Depending on your distro, they may have different names.
 
-Using `depends` might also be easier to compile Aeon on Windows than using MSYS. Activate Windows Subsystem for Linux (WSL) with a distro (for example Ubuntu), install the apt build-essentials and follow the `depends` steps as depicted above.
+Using `depends` might also be easier to compile EuropaCash on Windows than using MSYS. Activate Windows Subsystem for Linux (WSL) with a distro (for example Ubuntu), install the apt build-essentials and follow the `depends` steps as depicted above.
 
-## Installing Aeon from a package
+## Installing EuropaCash from a package
 
 **DISCLAIMER: These packages are not part of this repository or maintained by this project's contributors, and as such, do not go through the same review process to ensure their trustworthiness and security.**
 
@@ -507,55 +507,55 @@ Packages are available for
 
 * (**TODO**) ~Ubuntu and [snap supported](https://snapcraft.io/docs/core/install) systems, via a community contributed build.~
 
-        snap install aeon --beta
+        snap install europacash --beta
 
 ~Installing a snap is very quick. Snaps are secure. They are isolated with all of their dependencies. Snaps also auto update when a new version is released.~
 
 * (**TODO**) ~Arch Linux (via [AUR](https://aur.archlinux.org/)):~
-  - ~Stable release: [`aeon`](https://aur.archlinux.org/packages/aeon)~
-  - ~Bleeding edge: [`aeon-git`](https://aur.archlinux.org/packages/aeon-git)~
+  - ~Stable release: [`europacash`](https://aur.archlinux.org/packages/europacash)~
+  - ~Bleeding edge: [`europacash-git`](https://aur.archlinux.org/packages/europacash-git)~
 
 * (**TODO**) ~Void Linux:~
 
-        xbps-install -S aeon
+        xbps-install -S europacash
 
 * (**TODO**) ~GuixSD~
 
-        guix package -i aeon
+        guix package -i europacash
 
 * OS X via [Homebrew](https://brew.sh)
 
-        brew tap sammy007/aeon
-        brew install aeon -v
+        brew tap sammy007/europacash
+        brew install europacash -v
 
 * Docker
 
         # Build using all available cores
-        docker build -t aeon .
+        docker build -t europacash .
 
         # or build using a specific number of cores (reduce RAM requirement)
-        docker build --build-arg NPROC=1 -t aeon .
+        docker build --build-arg NPROC=1 -t europacash .
      
         # either run in foreground
-        docker run -it -v /aeon/chain:/root/.aeon -v /aeon/wallet:/wallet -p 11180:11180 aeon
+        docker run -it -v /europacash/chain:/root/.europacash -v /europacash/wallet:/wallet -p 11180:11180 europacash
 
         # or in background
-        docker run -it -d -v /aeon/chain:/root/.aeon -v /aeon/wallet:/wallet -p 11180:11180 aeon
+        docker run -it -d -v /europacash/chain:/root/.europacash -v /europacash/wallet:/wallet -p 11180:11180 europacash
 
 * The build needs 3 GB space.
 * Wait one  hour or more
 
 Packaging for your favorite distribution would be a welcome contribution!
 
-## Running aeond
+## Running europacashd
 
 The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
 foreground:
 
-    ./bin/aeond
+    ./bin/europacashd
 
-To list all available options, run `./bin/aeond --help`.  Options can be
+To list all available options, run `./bin/europacashd --help`.  Options can be
 specified either on the command line or in a configuration file passed by the
 `--config-file` argument.  To specify an option in the configuration file, add
 a line with the syntax `argumentname=value`, where `argumentname` is the name
@@ -563,17 +563,17 @@ of the argument without the leading dashes, for example `log-level=1`.
 
 To run in background:
 
-    ./bin/aeond --log-file aeond.log --detach
+    ./bin/europacashd --log-file europacashd.log --detach
 
 To run as a systemd service, copy
-[aeond.service](utils/systemd/aeond.service) to `/etc/systemd/system/` and
-[aeond.conf](utils/conf/aeond.conf) to `/etc/`. The [example
-service](utils/systemd/aeond.service) assumes that the user `aeon` exists
+[europacashd.service](utils/systemd/europacashd.service) to `/etc/systemd/system/` and
+[europacashd.conf](utils/conf/europacashd.conf) to `/etc/`. The [example
+service](utils/systemd/europacashd.service) assumes that the user `europacash` exists
 and its home is the data directory specified in the [example
-config](utils/conf/aeond.conf).
+config](utils/conf/europacashd.conf).
 
 If you're on Mac, you may need to add the `--max-concurrency 1` option to
-aeon-wallet-cli, and possibly aeond, if you get crashes refreshing.
+europacash-wallet-cli, and possibly europacashd, if you get crashes refreshing.
 
 ## Internationalization
 
@@ -581,31 +581,31 @@ See [README.i18n.md](README.i18n.md).
 
 ## Using Tor
 
-While Aeon isn't made to integrate with Tor, it can be used wrapped with torsocks, by
+While EuropaCash isn't made to integrate with Tor, it can be used wrapped with torsocks, by
 setting the following configuration parameters and environment variables:
 
 * `--p2p-bind-ip 127.0.0.1` on the command line or `p2p-bind-ip=127.0.0.1` in
-  aeond.conf to disable listening for connections on external interfaces.
-* `--no-igd` on the command line or `no-igd=1` in aeond.conf to disable IGD
+  europacashd.conf to disable listening for connections on external interfaces.
+* `--no-igd` on the command line or `no-igd=1` in europacashd.conf to disable IGD
   (UPnP port forwarding negotiation), which is pointless with Tor.
 * `DNS_PUBLIC=tcp` or `DNS_PUBLIC=tcp://x.x.x.x` where x.x.x.x is the IP of the
   desired DNS server, for DNS requests to go over TCP, so that they are routed
-  through Tor. When IP is not specified, aeond uses the default list of
+  through Tor. When IP is not specified, europacashd uses the default list of
   servers defined in [src/common/dns_utils.cpp](src/common/dns_utils.cpp).
-* `TORSOCKS_ALLOW_INBOUND=1` to tell torsocks to allow aeond to bind to interfaces
+* `TORSOCKS_ALLOW_INBOUND=1` to tell torsocks to allow europacashd to bind to interfaces
    to accept connections from the wallet. On some Linux systems, torsocks
    allows binding to localhost by default, so setting this variable is only
    necessary to allow binding to local LAN/VPN interfaces to allow wallets to
    connect from remote hosts. On other systems, it may be needed for local wallets
    as well.
 * Do NOT pass `--detach` when running through torsocks with systemd, (see
-  [utils/systemd/aeond.service](utils/systemd/aeond.service) for details).
+  [utils/systemd/europacashd.service](utils/systemd/europacashd.service) for details).
 * If you use the wallet with a Tor daemon via the loopback IP (eg, 127.0.0.1:9050),
   then use `--untrusted-daemon` unless it is your own hidden service.
 
-Example command line to start aeond through Tor:
+Example command line to start europacashd through Tor:
 
-    DNS_PUBLIC=tcp torsocks aeond --p2p-bind-ip 127.0.0.1 --no-igd
+    DNS_PUBLIC=tcp torsocks europacashd --p2p-bind-ip 127.0.0.1 --no-igd
 
 ### Using Tor on Tails
 
@@ -614,12 +614,12 @@ to add a rule to allow this connection too, in addition to telling torsocks to
 allow inbound connections. Full example:
 
     sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 11181 -j ACCEPT
-    DNS_PUBLIC=tcp torsocks ./aeond --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 \
+    DNS_PUBLIC=tcp torsocks ./europacashd --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 \
         --data-dir /home/amnesia/Persistent/your/directory/to/the/blockchain
 
 ## Debugging
 
-This section contains general instructions for debugging failed installs or problems encountered with Aeon. First ensure you are running the latest version built from the Github repo.
+This section contains general instructions for debugging failed installs or problems encountered with EuropaCash. First ensure you are running the latest version built from the Github repo.
 
 ### Obtaining stack traces and core dumps on Unix systems
 
@@ -632,7 +632,7 @@ Run the build.
 Once it stalls, enter the following command:
 
 ```
-gdb /path/to/aeond `pidof aeond` 
+gdb /path/to/europacashd `pidof europacashd` 
 ```
 
 Type `thread apply all bt` within gdb in order to obtain the stack trace
@@ -645,21 +645,21 @@ Enter `echo core | sudo tee /proc/sys/kernel/core_pattern` to stop cores from be
 
 Run the build.
 
-When it terminates with an output along the lines of "Segmentation fault (core dumped)", there should be a core dump file in the same directory as aeond. It may be named just `core`, or `core.xxxx` with numbers appended.
+When it terminates with an output along the lines of "Segmentation fault (core dumped)", there should be a core dump file in the same directory as europacashd. It may be named just `core`, or `core.xxxx` with numbers appended.
 
 You can now analyse this core dump with `gdb` as follows:
 
-`gdb /path/to/aeond /path/to/dumpfile`
+`gdb /path/to/europacashd /path/to/dumpfile`
 
 Print the stack trace with `bt`
 
-* To run aeond within gdb:
+* To run europacashd within gdb:
 
-Type `gdb /path/to/aeond`
+Type `gdb /path/to/europacashd`
 
 Pass command-line options with `--args` followed by the relevant arguments
 
-Type `run` to run aeond
+Type `run` to run europacashd
 
 ### Analysing memory corruption
 
@@ -667,15 +667,15 @@ There are two tools available:
 
 * ASAN
 
-Configure Aeon with the -D SANITIZE=ON cmake flag, eg:
+Configure EuropaCash with the -D SANITIZE=ON cmake flag, eg:
 
     cd build/debug && cmake -D SANITIZE=ON -D CMAKE_BUILD_TYPE=Debug ../..
 
-You can then run the aeon tools normally. Performance will typically halve.
+You can then run the europacash tools normally. Performance will typically halve.
 
 * valgrind
 
-Install valgrind and run as `valgrind /path/to/aeond`. It will be very slow.
+Install valgrind and run as `valgrind /path/to/europacashd`. It will be very slow.
 
 ### LMDB
 
@@ -683,7 +683,7 @@ Instructions for debugging suspected blockchain corruption as per @HYC
 
 There is an `mdb_stat` command in the LMDB source that can print statistics about the database but it's not routinely built. This can be built with the following command:
 
-`cd ~/aeon/external/db_drivers/liblmdb && make`
+`cd ~/europacash/external/db_drivers/liblmdb && make`
 
 The output of `mdb_stat -ea <path to blockchain dir>` will indicate inconsistencies in the blocks, block_heights and block_info table.
 

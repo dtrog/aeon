@@ -127,7 +127,7 @@ endif()
 
 set_property(TARGET blockchain_import
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-import")
+	OUTPUT_NAME "europacash-blockchain-import")
 install(TARGETS blockchain_import DESTINATION bin)
 
 monero_add_executable(blockchain_export
@@ -148,7 +148,7 @@ target_link_libraries(blockchain_export
 
 set_property(TARGET blockchain_export
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-export")
+	OUTPUT_NAME "europacash-blockchain-export")
 install(TARGETS blockchain_export DESTINATION bin)
 
 monero_add_executable(blockchain_blackball
@@ -170,7 +170,7 @@ target_link_libraries(blockchain_blackball
 
 set_property(TARGET blockchain_blackball
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-mark-spent-outputs")
+	OUTPUT_NAME "europacash-blockchain-mark-spent-outputs")
 install(TARGETS blockchain_blackball DESTINATION bin)
 
 
@@ -192,7 +192,7 @@ target_link_libraries(blockchain_usage
 
 set_property(TARGET blockchain_usage
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-usage")
+	OUTPUT_NAME "europacash-blockchain-usage")
 install(TARGETS blockchain_usage DESTINATION bin)
 
 monero_add_executable(blockchain_ancestry
@@ -213,7 +213,7 @@ target_link_libraries(blockchain_ancestry
 
 set_property(TARGET blockchain_ancestry
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-ancestry")
+	OUTPUT_NAME "europacash-blockchain-ancestry")
 install(TARGETS blockchain_ancestry DESTINATION bin)
 
 monero_add_executable(blockchain_depth
@@ -234,6 +234,6 @@ target_link_libraries(blockchain_depth
 
 set_property(TARGET blockchain_depth
 	PROPERTY
-	OUTPUT_NAME "aeon-blockchain-depth")
+	OUTPUT_NAME "europacash-blockchain-depth")
 install(TARGETS blockchain_depth DESTINATION bin)
 

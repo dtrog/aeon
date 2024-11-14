@@ -1,33 +1,33 @@
 [Unit]
-Description=Aeon Full Node
+Description=EuropaCash Full Node
 After=network.target
 
 [Service]
-User=aeon
-Group=aeon
+User=europacash
+Group=europacash
 WorkingDirectory=~
-RuntimeDirectory=aeon
+RuntimeDirectory=europacash
 
 # Clearnet config
 #
 Type=forking
-PIDFile=/run/aeon/aeond.pid
-ExecStart=/usr/bin/aeond --config-file /etc/aeond.conf \
-    --detach --pidfile /run/aeon/aeond.pid
+PIDFile=/run/europacash/europacashd.pid
+ExecStart=/usr/bin/europacashd --config-file /etc/europacashd.conf \
+    --detach --pidfile /run/europacash/europacashd.pid
 
 # Tor config
 #
 ## We have to use simple, not forking, because we cannot pass --detach
 ## because stderr/stdout is not available when detached, but torsocks
 ## attempts to write to it, and fails with 'invalid argument', causing
-## aeond to fail.
+## europacashd to fail.
 #Type=simple
 #Environment=DNS_PUBLIC=tcp
 ## The following is needed only when accessing wallet from a different
 ## host in the LAN, VPN, etc, the RPC must bind to 0.0.0.0, but
 ## by default torsocks only allows binding to localhost.
 #Environment=TORSOCKS_ALLOW_INBOUND=1
-#ExecStart=/usr/bin/torsocks /usr/bin/aeond --config-file /etc/aeond.conf \
+#ExecStart=/usr/bin/torsocks /usr/bin/europacashd --config-file /etc/europacashd.conf \
 #    --non-interactive
 
 Restart=always
