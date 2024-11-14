@@ -110,7 +110,7 @@ static_assert(DIFFICULTY_LAG_V9 < DIFFICULTY_LAG_V1, "");
 #define P2P_DEFAULT_PACKET_MAX_SIZE                     50000000     //50000000 bytes maximum packet size
 #define P2P_DEFAULT_PEERS_IN_HANDSHAKE                  250
 #define P2P_DEFAULT_CONNECTION_TIMEOUT                  5000       //5 seconds
-#define P2P_DEFAULT_PING_CONNECTION_TIMEOUT             2000       //2 seconds
+#define P2P_DEFAULT_PING_CONNECTION_TIMEOUT             5000       //5 seconds
 #define P2P_DEFAULT_INVOKE_TIMEOUT                      60*2*1000  //2 minutes
 #define P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT            5000       //5 seconds
 #define P2P_DEFAULT_WHITELIST_CONNECTIONS_PERCENT       70
@@ -168,9 +168,9 @@ namespace config
   uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x3d50e2;                // starts with "euc"
   uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 0x4be2;       // starts with "euC"
   uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 0xe0;                 // starts with "eU"
-  uint16_t const P2P_DEFAULT_PORT = 12121;
-  uint16_t const RPC_DEFAULT_PORT = 12122;
-  uint16_t const ZMQ_RPC_DEFAULT_PORT = 12128;
+  uint16_t const P2P_DEFAULT_PORT = 45415;
+  uint16_t const RPC_DEFAULT_PORT = 45416;
+  uint16_t const ZMQ_RPC_DEFAULT_PORT = 45419;
   boost::uuids::uuid const NETWORK_ID = { {
     0x45, 0x75, 0x72, 0x6F, 0x70, 0x61, 0x43, 0x61, 0x73, 0x68, 0x43, 0x6F, 0x69, 0x6E, 0x42, 0x45
     } }; // Bender's nightmare
