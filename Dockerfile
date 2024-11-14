@@ -179,7 +179,7 @@ VOLUME /root/.europacash
 VOLUME /wallet
 
 EXPOSE 45415
-EXPOSE 45456
+EXPOSE 45416
 
 ENTRYPOINT ["europacashd", "--p2p-bind-ip=0.0.0.0", "--p2p-bind-port=45415", "--rpc-bind-ip=0.0.0.0", "--rpc-bind-port=45416", "--non-interactive", "--confirm-external-bind"]
 
