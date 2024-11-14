@@ -37,6 +37,7 @@
 #include <set>
 #include <ctime>
 #include <iostream>
+#include <cstdint>
 
 //  Public interface for libwallet library
 namespace Monero {
