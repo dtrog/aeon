@@ -393,15 +393,16 @@ namespace nodetool
     std::set<std::string> full_addrs;
     if (nettype == cryptonote::TESTNET)
     {
-      // full_addrs.insert("104.168.163.221:21180");
-      // full_addrs.insert("74.91.23.186:21180");
-      // full_addrs.insert("192.187.114.114:21180");
+      full_addrs.insert("192.168.1.38:23232"); //rpi5
+      full_addrs.insert("192.168.1.49:23232"); //lenovo
+      full_addrs.insert("192.168.1.34:23232"); //nuc
+
     }
     else if (nettype == cryptonote::STAGENET)
     {
-      // full_addrs.insert("104.168.163.221:31180");
-      // full_addrs.insert("74.91.23.186:31180");
-      // full_addrs.insert("192.187.114.114:31180");
+      full_addrs.insert("192.168.1.38:34343"); //rpi5
+      full_addrs.insert("192.168.1.49:34343"); //lenovo
+      full_addrs.insert("192.168.1.34:34343"); //nuc
     }
     else if (nettype == cryptonote::FAKECHAIN)
     {
